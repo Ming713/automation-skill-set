@@ -5,8 +5,7 @@ from common.driver_manager import DriverManager
 class BasicPage:
     def __init__(self, driver=None):
         if driver is None:
-            driver = DriverManager.start_chrome_driver()
-            driver.maximize_window()
+            driver = DriverManager.init_browser()
         self.driver = driver
 
     def quit(self):
