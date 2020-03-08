@@ -64,7 +64,12 @@ it used
   Please refer to the [Assignment Requirements and Result](https://docs.google.com/spreadsheets/d/15EN2fixOko38UAQnboBkzmGMVlRh4ou0SETpyANyyuE/edit?usp=sharing)
 
 # Test Video:
-  Please refer to the [Assignment Video](https://www.screencast.com/t/ViLVuVyv56)
+  Please refer to the following Ming skill videos:
+  1. [Test Report Video](https://www.screencast.com/t/FtUdb5Zvgx)
+  2. [Web App Test Video](https://www.screencast.com/t/tXtOl8yt5)
+  3. [Parallel Testing of the App Test Video](https://www.screencast.com/t/gXcLKlZ3Si)
+  4. [Test Plan](https://www.screencast.com/t/lmD4NDYANZg)
+  5. [Mobile App Test Video](https://www.screencast.com/t/8ytoL1NV)
   Note:  Enable the flash option in the browser to watch this video. 
   
 # Test Plan for Assignment3
