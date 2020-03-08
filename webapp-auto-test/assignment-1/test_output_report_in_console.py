@@ -5,7 +5,7 @@ import prettytable as pt
 def test_report_output_in_console():
 
     # open the json file containing the test results
-    with open('test_results.json', 'r') as test_file:
+    with open('webapp-auto-test/assignment-1/test_results.json', 'r') as test_file:
         test_results_dict = json.load(test_file)['test_suites']
 
     # initialize 2 reports for tests passed and failed in each test suite separately
