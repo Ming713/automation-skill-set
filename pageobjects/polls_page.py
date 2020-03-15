@@ -25,7 +25,8 @@ class PollsPage(BasicPage):
 
     def get_random_option_voted_times(self):
         driver = self.driver
-        wait_for_element(driver, (By.CSS_SELECTOR, vote_list_on_voted_page_by_css))
+        # work-around: adjust to wait 60 seconds due to the flaky issue. this issue often occured in Jenkins
+        wait_for_element(driver, (By.CSS_SELECTOR, vote_list_on_voted_page_by_css), timeout=60)
         voted_text = driver.find_elements_by_css_selector(vote_list_on_voted_page_by_css)[random_num].text
         # get how many people to vote the random option
         voted_ticket_num = voted_text.split(' ', 1)[0]
