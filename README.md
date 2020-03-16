@@ -57,7 +57,22 @@ it used
 ### Use Case #2: I want to run the `parallel testing` for assignment 2 in local
   run ``<root_folder>automation-skill-set/BROWSER_NAME='DESKTOP CHROME' PYTHONPATH=. pytest webapp-auto-test/assignment-2/test_on_dotslash_web.py``
 
-### Use Case #3: I want to run the `android mobile` auto testing in local
+### Use Case #3: I want to run the `parallel testing` for assignment 2 in the selenium-grid
+  download the selenium grid jar file [selenium-server-standalone-3.141.59.jar](https://www.selenium.dev/downloads/)
+  set the directory of the selenium grid jar file into the PATH variable
+  open the terminal on the mac 
+  run ``<root_folder>automation-skill-set/java -jar selenium-server-standalone-3.141.59.jar -role hub`` to start selenium grid hub
+  run ``<root_folder>automation-skill-set/java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 5566`` to register the selenium node
+  run ``<root_folder>automation-skill-set/TARGET_ENV='SELENIUM GRID' BROWSER_NAME='DESKTOP CHROME' PYTHONPATH=. pytest webapp-auto-test/assignment-2/test_on_dotslash_web.py``
+
+### Use Case #4: I want to run the `parallel testing` for assignment 2 in the selenium-grid with the jenkins
+  open the terminal on the mac 
+  run ``<root_folder>automation-skill-set/java -jar selenium-server-standalone-3.141.59.jar -role hub`` to start selenium grid hub
+  run ``<root_folder>automation-skill-set/java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444/grid/register -port 5566`` to register the selenium node
+  enter ``http://localhost:8080/job/automation-skill-set/ `` to access the Jenkins
+  select ``automation-skill-set`` pipeline to build 
+
+### Use Case #5: I want to run the `android mobile` auto testing in local
   run ``<root_folder>automation-skill-set/BROWSER_NAME='MOBILE' PYTHONPATH=. pytest mobileapp-auto-test/test_gmail_android.py``
 
 # Test Result Screenshot for Assignment1 and 2:
