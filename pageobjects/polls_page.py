@@ -16,7 +16,7 @@ random_num = random.randint(0, 4)
 class PollsPage(BasicPage):
     def select_random_option_to_vote(self):
         driver = self.driver
-        wait_for_element(driver, (By.CSS_SELECTOR, vote_list_on_vote_now_page_by_css))
+        wait_for_element(driver, (By.CSS_SELECTOR, vote_list_on_vote_now_page_by_css), timeout=60)
         click_element(driver, (By.CSS_SELECTOR, vote_list_on_vote_now_page_by_css))
 
     def click_vote_button(self):
